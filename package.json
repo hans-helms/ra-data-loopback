@@ -1,9 +1,8 @@
 {
-    "name": "ra-data-simple-rest",
-    "version": "2.9.8",
-    "description": "Simple REST data provider for react-admin",
-    "main": "lib/index.js",
-    "module": "esm/index.js",
+    "name": "ra-data-loopback",
+    "version": "1.0.0",
+    "description": "Simple REST data provider for react-admin for loopback 2+",
+    "main": "src/index.js",
     "sideEffects": false,
     "files": [
         "*.md",
@@ -12,18 +11,9 @@
         "src"
     ],
     "authors": [
-        "François Zaninotto"
+        "Hans Helms"
     ],
-    "repository": "marmelab/react-admin",
-    "homepage": "https://github.com/marmelab/react-admin#readme",
-    "bugs": "https://github.com/marmelab/react-admin/issues",
     "license": "MIT",
-    "scripts": {
-        "build": "yarn run build-cjs && yarn run build-esm",
-        "build-cjs": "rimraf ./lib && tsc",
-        "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-        "watch": "rimraf ./lib && tsc --watch"
-    },
     "dependencies": {
         "query-string": "~5.1.1",
         "ra-core": "^2.9.8"
